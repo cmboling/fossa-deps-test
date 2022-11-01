@@ -3,6 +3,7 @@ referenced-dependencies:
     name: https://github.com/M4tteoP/libpcre
   - type: git
     name: https://github.com/istio/proxy/tree/1.13.3
+    version: 1.13.3
 
 # too slow
 # remote-dependencies:
