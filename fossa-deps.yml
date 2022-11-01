@@ -5,7 +5,8 @@ referenced-dependencies:
     name: https://github.com/istio/proxy
     version: 1.13.3
   - type: git
-    name: https://github.com/SpiderLabs/ModSecurity/tree/v3/dev/wasm-experimental
+    name: https://github.com/SpiderLabs/ModSecurity
+    version: a68a2c7199b680b09a1cb7b0197bc3a1889512d2
 
 # too slow
 # remote-dependencies:
