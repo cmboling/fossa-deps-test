@@ -1,3 +1,11 @@
 referenced-dependencies:
   - type: git
     name: https://github.com/M4tteoP/libpcre
+
+remote-dependencies:
+- name: protobuf
+  version: 21.9
+  url: https://github.com/protocolbuffers/protobuf/archive/refs/tags/v21.9.tar.gz
+  metadata:
+    homepage: https://github.com/protocolbuffers/protobuf
+    description: Protocol Buffers - Google's data interchange format
