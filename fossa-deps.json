@@ -61,7 +61,7 @@
     {
       "type": "git",
       "name": "https://github.com/google/googletest"
-    }
+    },
     {
       "type": "git",
       "name": "https://github.com/bazelbuild/bazelisk"
