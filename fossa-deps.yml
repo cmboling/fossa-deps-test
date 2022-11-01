@@ -1,0 +1,3 @@
+referenced-dependencies:
+  - type: git
+    name: https://github.com/M4tteoP/libpcre
