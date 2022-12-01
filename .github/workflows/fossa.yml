@@ -31,6 +31,7 @@ jobs:
           fossa test --json | jq '.issues[] | select(.type == "vulnerability" and .status == "new" and .depth < 3)'
           
       - name: Running FOSSA CLI test with --diff
+        if: github.event.pull_request.base.ref == 'main'
         run: |
           LATEST_REVISION_FROM_DEFAULT_BRANCH=$(curl -X 'GET' \
             'https://app.fossa.com/api/projects/custom%2B12948%2Fgithub.com%2Fcmboling%2Ffossa-deps-test?ref_type=branch&ref=main' \
