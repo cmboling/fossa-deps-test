@@ -31,10 +31,11 @@ jobs:
           fossa test --json | jq '.issues[] | select(.type == "vulnerability" and .status == "new" and .depth < 3)'
           
       - name: Running FOSSA diff on latest revision of main branch
+        # project locator can be found in the project settings. it needs to be URL encoded in the below request
         if: github.event.pull_request.base.ref == 'main'
         run: |
           curl -X 'GET' \
-            'https://app.fossa.com/api/projects/custom%2B12948%2Fgithub.com%2Fcmboling%2Ffossa-deps-test?ref_type=branch&ref=main' \
-            -H 'accept: application/json' \
-            -H 'Authorization: Bearer ${{secrets.FOSSA_API_KEY}} | jq '.last_analyzed.loc.revision' | xargs fossa test --diff
+          'https://app.fossa.com/api/projects/custom%2B12948%2Fgithub.com%2Fcmboling%2Ffossa-deps-test?ref_type=branch&ref=main' \
+          -H 'accept: application/json' \
+          -H 'Authorization: Bearer ${{secrets.FOSSA_API_KEY}}' | jq '.last_analyzed.loc.revision' | xargs fossa test --diff
 
