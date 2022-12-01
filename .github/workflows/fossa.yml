@@ -29,3 +29,13 @@ jobs:
           curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install-latest.sh | bash
           fossa --version
           fossa test --json | jq '.issues[] | select(.type == "vulnerability" and .status == "new" and .depth < 3)'
+          
+      - name: Running FOSSA CLI test with --diff
+        run: |
+          LATEST_REVISION_FROM_DEFAULT_BRANCH=$(curl -X 'GET' \
+            'https://app.fossa.com/api/projects/custom%2B12948%2Fgithub.com%2Fcmboling%2Ffossa-deps-test?ref_type=branch&ref=main' \
+            -H 'accept: application/json' \
+            -H 'Authorization: Bearer ${{secrets.FOSSA_API_KEY}}' | jq '.last_analyzed.loc.revision')
+          
+          fossa test --diff $LATEST_REVISION_FROM_DEFAULT_BRANCH
+
