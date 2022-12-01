@@ -37,6 +37,11 @@ jobs:
           fossa_key: ${{secrets.FOSSA_API_KEY}}
         run: |
           curl -X 'GET' \
+            'https://app.fossa.com/api/projects/custom%2B12948%2Fgithub.com%2Fcmboling%2Ffossa-deps-test?ref_type=branch&ref=main' \
+            -H 'accept: application/json' \
+            -H 'Authorization: Bearer $fossa_key' | jq '.last_analyzed.loc.revision'
+
+          curl -X 'GET' \
           'https://app.fossa.com/api/projects/custom%2B12948%2Fgithub.com%2Fcmboling%2Ffossa-deps-test?ref_type=branch&ref=main' \
           -H 'accept: application/json' \
           -H 'Authorization: Bearer $fossa_key' | jq '.last_analyzed.loc.revision' | xargs fossa test --diff
