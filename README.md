@@ -23,3 +23,9 @@ Similarly, when we do specify a version as an actual version/tag or even a commi
 
 
 <img width="818" alt="image" src="https://user-images.githubusercontent.com/1427948/199325276-7cd01987-ac16-4d7b-8ad1-cb25a6d1dda5.png">
+
+### Project attribution report
+
+<img width="1535" alt="image" src="https://user-images.githubusercontent.com/1427948/205160995-206df5ee-9acc-4932-a1ae-de49e02c6d2b.png">
+
+Click [here](https://app.fossa.com/attribution/e3f1a598-a28d-417d-bc41-2a240d075c7c) to download this example public report.
