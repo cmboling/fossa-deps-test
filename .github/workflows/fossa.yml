@@ -31,6 +31,7 @@ jobs:
           fossa test --json | jq '.issues[] | select(.type == "vulnerability" and .status == "new" and .depth < 3)'
           
       - name: Running FOSSA diff on latest revision of main branch
+        # project locator can be found in the project settings. it needs to be URL encoded in the below request
         if: github.event.pull_request.base.ref == 'main'
         run: |
           curl -X 'GET' \
