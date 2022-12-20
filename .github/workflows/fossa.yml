@@ -10,8 +10,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      FOSSA_API_KEY: ${{secrets.FOSSA_API_KEY}}
+#     env:
+#       FOSSA_API_KEY: ${{secrets.FOSSA_API_KEY}}
 
     strategy:
       fail-fast: false
