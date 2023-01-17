@@ -19,10 +19,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
   
-      - uses: fossas/fossa-action@main
+      - uses: fossas/fossa-action@godeepakm/add-project-flag
         id: fossa-analyze
         with:
           api-key: ${{secrets.fossaApiKey}}
+          project: something-cool
 
       - name: Running FOSSA CLI test with json output
         run: |
