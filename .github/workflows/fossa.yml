@@ -22,20 +22,6 @@ jobs:
       - uses: fossas/fossa-action@godeepakm/add-project-flag
         id: fossa-analyze
         with:
-          api-key: ${{secrets.fossaApiKey}}
-          project: something-cool
-
-      - name: Running FOSSA CLI test with json output
-        run: |
-          curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install-latest.sh | bash
-          fossa --version
-          fossa test --json | jq '.issues[] | select(.type == "vulnerability" and .status == "new" and .depth < 3)'
-          
-      - name: Running FOSSA diff on latest revision of main branch
-        if: github.event.pull_request.base.ref == 'main'
-        run: |
-          curl -X 'GET' \
-            'https://app.fossa.com/api/projects/custom%2B12948%2Fgithub.com%2Fcmboling%2Ffossa-deps-test?ref_type=branch&ref=main' \
-            -H 'accept: application/json' \
-            -H 'Authorization: Bearer ${{secrets.FOSSA_API_KEY}} | jq '.last_analyzed.loc.revision' | xargs fossa test --diff
+          api-key: ${{secrets.FOSSA_API_KEY}}
+          project: 'something-cool-2025'
 
