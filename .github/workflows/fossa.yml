@@ -19,9 +19,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
   
-      - uses: fossas/fossa-action@godeepakm/add-project-flag
-        id: fossa-analyze
+      - uses: fossas/fossa-action@1b87cccfdc2c2d280109da875327e93a
         with:
           api-key: ${{secrets.FOSSA_API_KEY}}
-          project: 'something-cool-2025'
+          project: 'something-cool-20251'
 
