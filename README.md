@@ -1,4 +1,4 @@
-# Example use case of `fossa-deps.json` 
+# Example use case of `fossa-deps.json`  tste
 
 ### What is this?
 This repository shows an example of how to format a set of [referenced dependencies](https://github.com/fossas/fossa-cli/blob/master/docs/features/manual-dependencies.md).
