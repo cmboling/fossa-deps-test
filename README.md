@@ -5,7 +5,7 @@ This repository shows an example of how to format a set of [referenced dependenc
 The referenced dependencies actually come from GitHub, where we specify `git` as the type and provide the url of the repository as the `name`. `version` is optional; if it's not specified, FOSSA will resolve to the latest commit sha. `version` can reference:
 - a tag/release that is known
 - the latest commit sha of some branch
-- or just any commit sha that you want to scan
+- or just any commit sha that you want to scan (test)
 
 ### What do the results look like in FOSSA (as of 11/1/2022)?
 
