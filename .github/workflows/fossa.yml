@@ -24,5 +24,8 @@ jobs:
         run: |
           curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install-latest.sh | bash
           git branch
+          echo ${{ github.event.pull_request.head.sha }}
+          echo ${{ github.event.pull_request.head.ref }}
+          echo "Checked out commit SHA: $(git rev-parse HEAD)"
           fossa --version
           fossa analyze
