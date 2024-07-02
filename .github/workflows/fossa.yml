@@ -18,11 +18,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: 
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ github.event.pull_request.title }}
   
       - name: Running FOSSA CLI
         run: |
           curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install-latest.sh | bash
           git branch
           fossa --version
-          fossa analyze --branch ${{ github.event.pull_request.title }}
+          fossa analyze
