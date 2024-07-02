@@ -1,26 +1,26 @@
-name: FOSSA CLI Analysis + Test
+name: FOSSA CLI Analysis
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-#     env:
-#       FOSSA_API_KEY: ${{secrets.FOSSA_API_KEY}}
+    env:
+      FOSSA_API_KEY: ${{secrets.FOSSA_API_KEY}}
 
     strategy:
       fail-fast: false
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
   
-      - uses: fossas/fossa-action@main
-        with:
-          api-key: ${{secrets.FOSSA_API_KEY}}
-          project: 'something-cool-20251'
-
+      - name: Running FOSSA CLI
+        run: |
+          curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install-latest.sh | bash
+          git branch
+          fossa --version
+          fossa analyze
