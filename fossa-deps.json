@@ -11,6 +11,11 @@
     },
     {
       "type": "git",
+      "name": "https://github.com/protocolbuffers/protobuf",
+      "version": "v3.9.1"
+    },
+    {
+      "type": "git",
       "name": "https://github.com/emscripten-core/emsdk.git",
       "version": "3.1.16"
     },
