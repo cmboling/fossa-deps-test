@@ -82,6 +82,6 @@
             "name": "flit_core-python3.9",
             "version": "3.9.0",
             "url": "https://files.pythonhosted.org/packages/source/f/flit_core/flit_core-3.9.0.tar.gz"
-        },
+        }
   ]
 }
