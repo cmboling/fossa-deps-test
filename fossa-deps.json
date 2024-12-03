@@ -11,13 +11,13 @@
     },
     {
       "type": "git",
-      "name": "https://github.com/protocolbuffers/protobuf",
-      "version": "v3.9.1"
+      "name": "https://github.com/emscripten-core/emsdk.git",
+      "version": "3.1.16"
     },
     {
       "type": "git",
-      "name": "https://github.com/emscripten-core/emsdk.git",
-      "version": "3.1.16"
+      "name": "https://github.com/M4tteoP/libpcre.git",
+      "version": "96466644c5843047f4e7bc779f9cd95e84bc7ad7"
     },
     {
       "type": "git",
