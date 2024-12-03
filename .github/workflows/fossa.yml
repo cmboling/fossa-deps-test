@@ -23,4 +23,4 @@ jobs:
           curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install-latest.sh | bash
           git branch
           fossa --version
-          fossa analyze --exclude-path "tools/**" --debug
+          fossa analyze --exclude-path tools/** --debug
