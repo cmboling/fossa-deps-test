@@ -10,5 +10,17 @@
             "version": "3.9.0",
             "path": "test-vendored-package"
         }
-  ]
+  ],
+    "remote-dependencies": [
+        {
+            "name": "flits37",
+            "version": "3.9.0",
+            "url": "https://files.pythonhosted.org/packages/source/f/flit_core/flit_core-3.9.0.tar.gz"
+        },
+        {
+            "name": "flits39",
+            "version": "3.9.0",
+            "url": "https://files.pythonhosted.org/packages/source/f/flit_core/flit_core-3.9.0.tar.gz"
+        }
+    ]
 }
