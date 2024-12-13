@@ -24,4 +24,4 @@ jobs:
           git branch
           echo ${{ github.ref}}
           fossa --version
-          fossa analyze --exclude-path tools/pybox/bin/pybox/lib/numpy/requirements.txt --debug
+          fossa analyze --branch ${{ github.ref}}  --debug
