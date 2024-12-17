@@ -18,12 +18,31 @@
             "url": "https://files.pythonhosted.org/packages/source/f/flit_core/flit_core-3.9.0.tar.gz"
         }
     ],
-      "referenced-dependencies": [
-        {
-            "name": "https://github.com/wolfSSL/wolfssl",
-            "version": "b7b20ededda4cea208fb7745629904fda64c7524",
-            "type": "git"
-        }
-    ]
+  "referenced-dependencies": [
+    {
+      "name": "wolfssl",
+      "type": "rpm-generic",
+      "version": "v5.7.0-stable",
+      "arch": "x86_64",
+      "os": "centos",
+      "osVersion": "8"
+    },
+    {
+      "name": "wolfssl",
+      "type": "deb",
+      "version": "v5.7.0-stable",
+      "arch": "amd64",
+      "os": "ubuntu",
+      "osVersion": "22.04"
+    },
+    {
+      "name": "wolfssl",
+      "type": "apk",
+      "version": "v5.7.0-stable",
+      "arch": "x86_64",
+      "os": "alpine",
+      "osVersion": "3.16.2"
+    }
+  ]
   
 }
