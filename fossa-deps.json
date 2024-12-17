@@ -21,7 +21,7 @@
       "referenced-dependencies": [
         {
             "name": "https://github.com/wolfSSL/wolfssl",
-            "version": "v5.7.0-stable",
+            "version": "b7b20ededda4cea208fb7745629904fda64c7524",
             "type": "git"
         }
     ]
