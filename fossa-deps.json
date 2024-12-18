@@ -42,7 +42,11 @@
       "arch": "x86_64",
       "os": "alpine",
       "osVersion": "3.16.2"
+    },
+    {
+      "name": "Microsoft.SqlServer.DacFx.x64",
+      "type": "nuget",
+      "version": "140.3881.1"
     }
   ]
-  
 }
