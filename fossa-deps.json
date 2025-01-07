@@ -9,6 +9,11 @@
             "name": "flit_core-python3.9",
             "version": "3.9.0",
             "path": "test-vendored-package"
+        },
+        {
+            "name": "animal-sniffer-annotations-1.19",
+            "version": "1.19.0",
+            "path": "animal-sniffer-annotations-1.19-javadoc.jar"
         }
   ],
     "remote-dependencies": [
