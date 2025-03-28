@@ -2,7 +2,7 @@
     "remote-dependencies": [
         {
             "name": "http://deb.debian.org/debian/pool/main/c/cssmin/cssmin_0.2.0.orig.tar.gz",
-            "version": "0.2.0",
+            "version": "hello20205",
             "url": "http://deb.debian.org/debian/pool/main/c/cssmin/cssmin_0.2.0.orig.tar.gz"
         },
         {
