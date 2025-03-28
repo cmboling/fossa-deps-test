@@ -1,8 +1,8 @@
 {
     "remote-dependencies": [
         {
-            "name": "test-name-1",
-            "version": "test-version-1",
+            "name": "http://deb.debian.org/debian/pool/main/c/cssmin/cssmin_0.2.0.orig.tar.gz",
+            "version": "0.2.0",
             "url": "http://deb.debian.org/debian/pool/main/c/cssmin/cssmin_0.2.0.orig.tar.gz"
         },
         {
