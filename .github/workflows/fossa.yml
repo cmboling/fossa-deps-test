@@ -21,6 +21,8 @@ jobs:
       - name: Running FOSSA CLI
         run: |
           curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install-latest.sh | bash
-          git branch
           fossa --version
-          fossa analyze --exclude-path tools/pybox/bin/pybox/lib/numpy/requirements.txt --debug
+          fossa analyze --debug
+
+          # in case of errors, upload debug bundle via
+          # https://github.com/actions/upload-artifact
