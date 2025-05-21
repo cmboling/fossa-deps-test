@@ -20,6 +20,12 @@
      {
        "name": "http://deb.debian.org/debian/pool/main/c/cssmin/cssmin_0.2.0.orig.tar.gz",
        "type": "url"
-     }
+     },
+         {
+             "name": "https://github.com/libgit2/libgit2"
+             "type": "git"
+             "version": "v1.7.2"
+         }
+         
    ]
 }
