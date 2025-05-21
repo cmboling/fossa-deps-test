@@ -22,7 +22,7 @@
        "type": "url"
      },
          {
-             "name": "https://github.com/libgit2/libgit2"
+             "name": "https://github.com/libgit2/libgit2",
              "type": "git"
              "version": "v1.7.2"
          }
